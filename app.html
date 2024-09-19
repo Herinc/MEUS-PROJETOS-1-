@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos com Scroll</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <style>
+    /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* Estilização do cabeçalho */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Estilização principal */
+main {
+    padding: 6rem 1rem 2rem; /* Para evitar sobreposição do header */
+}
+
+/* Estilização da galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.photo {
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilização do rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+    
+    
+    
+    
+    
+  </style>
+    <header>
+        <h1>Galeria de Fotos</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <!-- Adicione várias fotos -->
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 1">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 2">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 3">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 4">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 5">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 6">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 7">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 8">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 9">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 10">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 11">
+            </div>
+            <div class="photo">
+                <img src="https://via.placeholder.com/300" alt="Foto 12">
+            </div>
+            <!-- Adicione quantas fotos quiser -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Galeria de Fotos</p>
+    </footer>
+</body>
+</html>
